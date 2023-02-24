@@ -7,9 +7,18 @@ import json
 
 # This is main function to execute
 def main(event, context):
+    
     options = Options()
     options.binary_location = '/opt/headless-chromium'
     options.add_argument('--headless')
+    options.add_argument('--window-size=1920,1080')
+    options.add_argument('--ignore-certificate-errors')
+    options.add_argument('--allow-running-insecure-content')
+    options.add_argument('--disable-extensions')
+    options.add_argument("--proxy-server='direct://'")
+    options.add_argument("--proxy-bypass-list=*")
+    options.add_argument("--start-maximized")
+    options.add_argument('--disable-gpu')
     options.add_argument('--no-sandbox')
     options.add_argument('--single-process')
     options.add_argument('--disable-dev-shm-usage')
@@ -22,7 +31,7 @@ def main(event, context):
     time.sleep(2)
     title = driver.title
     
-    driver.execute_script("window.scrollTo(0, 200)")   
+    driver.execute_script("window.scrollTo(0, 200)")
     
     # First Get Titles and URL    
     url_elems = driver.find_elements(By.XPATH,"//a[@id='video-title-link']")
