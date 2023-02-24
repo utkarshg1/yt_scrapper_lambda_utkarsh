@@ -22,8 +22,7 @@ def main(event, context):
     time.sleep(2)
     title = driver.title
     
-    driver.execute_script("window.scrollTo(0, 200)")
-    
+    driver.execute_script("window.scrollTo(0, 200)")   
     
     # First Get Titles and URL    
     url_elems = driver.find_elements(By.XPATH,"//a[@id='video-title-link']")
@@ -63,12 +62,25 @@ def main(event, context):
     print('Top5Views',top5views)
     print('top5reltime',top5_reltime)
 
-    # Creating a Final dictionary for converting to dataframe
-    yt_dict = {'url_provided':data,'channel_title':title,'output':{'title':top5titles,'reltime':rel_time,'views':top5views,'videoURL':top5urls,'thumbnailURL':top5thumbnails}}
+    # Creating a final response to compile all data and provide as json
     
     response = {
         "statusCode": 200,
-        "body": str(yt_dict)
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "body": json.dumps({
+            'url_provided':data,
+            'channel_title':title,
+            'output':{
+                'title':top5titles,
+                'reltime':top5_reltime,
+                'views':top5views,
+                'videoURL':top5urls,
+                'thumbnailURL':top5thumbnails
+            }
+            
+        })
     }
     
     return response
