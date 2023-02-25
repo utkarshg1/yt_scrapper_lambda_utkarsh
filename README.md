@@ -71,3 +71,6 @@ response.json()
     }
 }
 ```
+# Logs Inside my AWS Console for Lambda Function
+
+![Logs Screenshot](./Screenshots/AWSLogs.jpg)
