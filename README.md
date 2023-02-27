@@ -5,6 +5,8 @@
 
 # Link To Jupyter Notebook using this api : [APIusage.ipynb](APIusage.ipynb)
 
+# Link To the code inside AWS Lambda function in this repository : [ytApi.py](ytApi.py)
+
 # How to use this api from python
 
 ```python
