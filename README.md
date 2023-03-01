@@ -3,24 +3,31 @@
 ### I created a post request API which is connected to AWS Lambda named : yt_scrapper_utkarsh
 ### API Link : [https://8rkvysfczg.execute-api.us-east-1.amazonaws.com/yt_scrapper_utkarsh](https://8rkvysfczg.execute-api.us-east-1.amazonaws.com/yt_scrapper_utkarsh)
 
-# Link To the code inside AWS Lambda function in this repository : [ytApi.py](ytApi.py)
+# Link To the code inside AWS Lambda function in this repository 
+## Code Inside AWS Lambda : [ytApi.py](ytApi.py)
 
-# Link To Jupyter Notebook using this api : [APIusage.ipynb](APIusage.ipynb)
+# Link To Jupyter Notebook using this api 
+## Link for How to use my API : [APIusage.ipynb](APIusage.ipynb)
 
-# Link for my detailed Logic in this Notebook : [Logic Jupyter Notebook for Code](https://github.com/utkarshg1/PWSkills-Assignments/blob/main/Assignment%2021%20-%2022%20February%202023/Assignment21Utkarsh.ipynb)
+# Link for my detailed Logic in this Notebook 
+## Link for my Complete logic behind this code : [Logic Jupyter Notebook for Code](https://github.com/utkarshg1/PWSkills-Assignments/blob/main/Assignment%2021%20-%2022%20February%202023/Assignment21Utkarsh.ipynb)
 
-# This API serves my Elastic Beanstalk Webpage : [My Elastic Beanstalk Web App](http://utkarshgaikwadytscraping-env.eba-gm3aqm5x.us-east-1.elasticbeanstalk.com/)
+# This API serves my Elastic Beanstalk Webpage 
+## My Final Web App link : [http://utkarshgaikwadytscraping-env.eba-gm3aqm5x.us-east-1.elasticbeanstalk.com/)](http://utkarshgaikwadytscraping-env.eba-gm3aqm5x.us-east-1.elasticbeanstalk.com/)
 
-# YouTube Demo for my Elastic Beanstalk Web Application : [YouTube Demo](https://youtu.be/X-7ZvUQZiYQ)
+# YouTube Demo for my Elastic Beanstalk Web Application 
+## YouTube Demo : [https://youtu.be/X-7ZvUQZiYQ](https://youtu.be/X-7ZvUQZiYQ)
 
-# GitHub Repository for my Elastic Beanstalk : [GitHub Elastic Beanstalk app](https://github.com/utkarshg1/yt_scrapper_aws_utkarsh)
+# GitHub Repository for my Elastic Beanstalk 
+## GitHub for my Final App : [https://github.com/utkarshg1/yt_scrapper_aws_utkarsh](https://github.com/utkarshg1/yt_scrapper_aws_utkarsh)
 
 # How to use this api from python
 
 ```python
 import requests
 data = {'url':'https://www.youtube.com/@PW-Foundation/videos'}
-response = requests.post('https://8rkvysfczg.execute-api.us-east-1.amazonaws.com/yt_scrapper_utkarsh',json=data)
+my_api_url = 'https://8rkvysfczg.execute-api.us-east-1.amazonaws.com/yt_scrapper_utkarsh'
+response = requests.post(my_api_url,json=data)
 response.json()
 ```
 
