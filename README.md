@@ -7,7 +7,13 @@
 
 # Link To Jupyter Notebook using this api : [APIusage.ipynb](APIusage.ipynb)
 
-# Link for my detailed Logic in this Notebool : [Logic Jupyter Notebook for Code](https://github.com/utkarshg1/PWSkills-Assignments/blob/main/Assignment%2021%20-%2022%20February%202023/Assignment21Utkarsh.ipynb)
+# Link for my detailed Logic in this Notebook : [Logic Jupyter Notebook for Code](https://github.com/utkarshg1/PWSkills-Assignments/blob/main/Assignment%2021%20-%2022%20February%202023/Assignment21Utkarsh.ipynb)
+
+# This API serves my Elastic Beanstalk Webpage : [My Elastic Beanstalk Web App](http://utkarshgaikwadytscraping-env.eba-gm3aqm5x.us-east-1.elasticbeanstalk.com/)
+
+# YouTube Demo for my Elastic Beanstalk Web Application : [YouTube Demo](https://youtu.be/X-7ZvUQZiYQ)
+
+# GitHub Repository for my Elastic Beanstalk : [GitHub Elastic Beanstalk app](https://github.com/utkarshg1/yt_scrapper_aws_utkarsh)
 
 # How to use this api from python
 
