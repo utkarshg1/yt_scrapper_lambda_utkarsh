@@ -3,9 +3,11 @@
 ### I created a post request API which is connected to AWS Lambda named : yt_scrapper_utkarsh
 ### API Link : [https://8rkvysfczg.execute-api.us-east-1.amazonaws.com/yt_scrapper_utkarsh](https://8rkvysfczg.execute-api.us-east-1.amazonaws.com/yt_scrapper_utkarsh)
 
+# Link To the code inside AWS Lambda function in this repository : [ytApi.py](ytApi.py)
+
 # Link To Jupyter Notebook using this api : [APIusage.ipynb](APIusage.ipynb)
 
-# Link To the code inside AWS Lambda function in this repository : [ytApi.py](ytApi.py)
+# Link for my detailed Logic in this Notebool : [Logic Jupyter Notebook for Code](https://github.com/utkarshg1/PWSkills-Assignments/blob/main/Assignment%2021%20-%2022%20February%202023/Assignment21Utkarsh.ipynb)
 
 # How to use this api from python
 
